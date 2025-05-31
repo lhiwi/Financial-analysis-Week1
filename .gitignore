@@ -1,0 +1,20 @@
+# Environments
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Data files
+*.csv
+*.parquet
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Secrets
+.env
+*.key
+
+# TA-Lib wheel
+*.whl
