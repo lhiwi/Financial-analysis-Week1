@@ -1,4 +1,4 @@
-name: Python CI/CD
+name: Python ci.yml
 
 on: [push, pull_request]
 
@@ -16,11 +16,14 @@ jobs:
         
     - name: Install TA-Lib
       run: |
-        # Use the correct URL for TA-Lib 0.5.1
-        pip install https://download.lfd.uci.edu/pythonlibs/z4tqcw5k/TA_Lib-0.5.1-cp311-cp311-win_amd64.whl
+        $url = "https://github.com/cgohlke/talib-build/releases/download/v0.6.3/ta_lib-0.6.3-cp311-cp311-win_amd64.whl"
+        $output = "ta_lib.whl"
+        Invoke-WebRequest -Uri $url -OutFile $output
+        pip install $output
         
-    - name: Install dependencies
+    - name: Install Python dependencies
       run: |
+        python -m pip install --upgrade pip
         pip install -r requirements.txt
         
     - name: Install NLTK data
