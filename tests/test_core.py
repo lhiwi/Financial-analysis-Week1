@@ -1,9 +1,13 @@
+# tests/test_core.py
 import talib
 from textblob import TextBlob
 import numpy as np
+import pandas as pd  # Add this
 
+# ... keep existing tests ...
+# tests/test_core.py
 def test_talib_version():
-    assert talib.__version__ == "0.5.1"
+    assert talib.__version__ == "0.5.1"  
 
 def test_rsi_calculation():
     prices = np.array([90.0, 92.5, 91.8, 94.2, 93.5], dtype=float)

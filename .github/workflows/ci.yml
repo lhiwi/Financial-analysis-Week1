@@ -18,8 +18,10 @@ jobs:
         
     - name: Install dependencies
       run: |
+        pip install numpy==1.26.4
+        pip install pandas_ta==0.3.14b0
         pip install pynance==1.0.0  # Explicit version
-        pip install -r requirements.txt
+        pip install -r requirements.txt    
         
     - name: Install NLTK data
       run: |
