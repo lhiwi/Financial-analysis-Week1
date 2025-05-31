@@ -1,4 +1,5 @@
-name: Python ci.yml
+name: Python CI/CD
+
 on: [push, pull_request]
 
 jobs:
@@ -14,14 +15,13 @@ jobs:
         cache: 'pip'
         
     - name: Install TA-Lib
-      run: pip install https://download.lfd.uci.edu/pythonlibs/z4tqcw5k/TA_Lib-0.4.24-cp311-cp311-win_amd64.whl
+      run: |
+        # Use the correct URL for TA-Lib 0.5.1
+        pip install https://download.lfd.uci.edu/pythonlibs/z4tqcw5k/TA_Lib-0.5.1-cp311-cp311-win_amd64.whl
         
     - name: Install dependencies
       run: |
-        pip install numpy==1.26.4
-        pip install pandas_ta==0.3.14b0
-        pip install pynance==1.0.0  # Explicit version
-        pip install -r requirements.txt    
+        pip install -r requirements.txt
         
     - name: Install NLTK data
       run: |
