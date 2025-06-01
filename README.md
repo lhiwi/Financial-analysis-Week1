@@ -28,15 +28,15 @@
 ## Setup & Execution
 ```bash
 # 1. Clone and setup
-git clone https://github.com/lhiwi/Financial-analysis-Week1.git
-cd Financial-analysis-Week1
-python -m venv .venv
-.\.venv\Scripts\activate
-pip install -r requirements.txt
+- git clone https://github.com/lhiwi/Financial-analysis-Week1.git
+- cd Financial-analysis-Week1
+- python -m venv .venv
+- .\.venv\Scripts\activate
+- pip install -r requirements.txt
 
 # 2. Run analyses
-jupyter notebook notebooks/eda.ipynb  # Task 1
-python scripts/task2_analysis.py     # Task 2
+- jupyter notebook notebooks/eda.ipynb  # Task 1
+- python scripts/task2_analysis.py     # Task 2
 ```
 
 ## Task 1: News EDA Results
@@ -55,11 +55,9 @@ Indicators:
         - Daily returns
 
 Output:
-        Technical charts for each stock
-
-        Indicator correlation matrices
+        - Technical charts for each stock
+        - Indicator correlation matrices
 
 ### Next Steps
-Task 3: News-stock correlation analysis
-
-Final report preparation
+- Task 3: News-stock correlation analysis
+- Final report preparation
