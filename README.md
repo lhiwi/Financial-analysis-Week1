@@ -8,7 +8,6 @@
 ## Features
 - NLP sentiment analysis of financial headlines
 - Technical indicators (RSI, MACD) with TA-Lib
-- Correlation analysis between news sentiment and stock returns
 - Automated CI/CD pipeline with GitHub Actions
 - Comprehensive exploratory data analysis
 
@@ -26,26 +25,52 @@
 ├── README.md
 └── requirements.txt
 
-## Setup
+## Setup & Execution
 ```bash
-# 1. Clone repository
+# 1. Clone and setup
 git clone https://github.com/lhiwi/Financial-analysis-Week1.git
 cd Financial-analysis-Week1
-
-# 2. Create virtual environment
 python -m venv .venv
 .\.venv\Scripts\activate
-
-# 3. Install dependencies
 pip install -r requirements.txt
 
-# 4. Run EDA
-jupyter notebook notebooks/eda.ipynb
+# 2. Run analyses
+jupyter notebook notebooks/eda.ipynb  # Task 1
+python scripts/task2_analysis.py     # Task 2
+```
+Task 1: News EDA Results
+Headlines: Avg length 62 chars (range 10-120)
+
+Top Publishers: SeekingAlpha (12,842), Benzinga (8,927), Bloomberg (7,563)
+
+Publication Patterns:
+
+Peak hours: 9-11 AM EST
+
+Peak day: Tuesday (18.7% of weekly volume)
+
+Top Keywords: Earnings, Stocks, Report, Price, Target
 
 ```
-Key Analyses
-- Headline length statistics
-- Top publishers by volume
-- Publication time patterns
-- Keyword extraction from headlines
-- Daily publication frequency
+Task 2: Technical Analysis
+Indicators:
+
+Moving Averages (SMA20, EMA50)
+
+Momentum (RSI14, MACD)
+
+Volatility (20-day StDev)
+
+Daily returns
+
+Output:
+
+Technical charts for each stock
+
+Indicator correlation matrices
+
+```
+Next Steps
+Task 3: News-stock correlation analysis
+
+Final report preparation
