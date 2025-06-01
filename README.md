@@ -38,39 +38,28 @@ pip install -r requirements.txt
 jupyter notebook notebooks/eda.ipynb  # Task 1
 python scripts/task2_analysis.py     # Task 2
 ```
-Task 1: News EDA Results
-Headlines: Avg length 62 chars (range 10-120)
 
-Top Publishers: SeekingAlpha (12,842), Benzinga (8,927), Bloomberg (7,563)
+## Task 1: News EDA Results
+- Headlines: Avg length 62 chars (range 10-120)
+- Top Publishers: SeekingAlpha (12,842), Benzinga (8,927), Bloomberg (7,563)
+- Publication Patterns:
+                        Peak hours: 9-11 AM EST
+                        Peak day: Tuesday (18.7% of weekly volume)
+- Top Keywords: Earnings, Stocks, Report, Price, Target
 
-Publication Patterns:
-
-Peak hours: 9-11 AM EST
-
-Peak day: Tuesday (18.7% of weekly volume)
-
-Top Keywords: Earnings, Stocks, Report, Price, Target
-
-```
-Task 2: Technical Analysis
+### Task 2: Technical Analysis
 Indicators:
-
-Moving Averages (SMA20, EMA50)
-
-Momentum (RSI14, MACD)
-
-Volatility (20-day StDev)
-
-Daily returns
+        - Moving Averages (SMA20, EMA50)
+        - Momentum (RSI14, MACD)
+        - Volatility (20-day StDev)
+        - Daily returns
 
 Output:
+        Technical charts for each stock
 
-Technical charts for each stock
+        Indicator correlation matrices
 
-Indicator correlation matrices
-
-```
-Next Steps
+### Next Steps
 Task 3: News-stock correlation analysis
 
 Final report preparation
